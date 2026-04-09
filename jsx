@@ -13,7 +13,7 @@ const TOOLS = [
     name: "Lesson Plan Generator",
     tagline: "Complete lesson plans in 60 seconds",
     description: "Input your subject, grade, topic, and duration. Get objectives, materials, warm-up, instruction, practice, and assessment sections ready to use.",
-    url: "[LESSON_PLAN_URL]", // Replace with actual Vercel URL
+    url: "https://lessonplangenerator-cyan.vercel.app/",
     tips: [
       "Be specific with your topic for better results",
       "Select learning style focus for differentiation",
@@ -27,7 +27,7 @@ const TOOLS = [
     name: "Assignment Grader",
     tagline: "Grade and comment in one click",
     description: "Paste student work, select feedback type, get grades plus ready-to-use comments. Save your rubric once and reuse it for every student.",
-    url: "[ASSIGNMENT_GRADER_URL]", // Replace with actual Vercel URL
+    url: "https://assignmentgrader-nu.vercel.app/",
     tips: [
       "Upload your rubric once to grade consistently",
       "Use 'Quick Comment' for report card language",
@@ -41,7 +41,7 @@ const TOOLS = [
     name: "Differentiation Helper",
     tagline: "One lesson, every learner",
     description: "Paste any lesson or assignment. Get versions for below grade level, above grade level, ELL students, and IEP accommodations.",
-    url: "[DIFFERENTIATION_URL]", // Replace with actual Vercel URL
+    url: "https://differentiation-helper.vercel.app/",
     tips: [
       "Works with lessons, worksheets, discussion prompts",
       "Select only the learner groups you need",
