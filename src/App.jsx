@@ -442,7 +442,7 @@ export default function App() {
             Email Brandon directly — include the tool name and what happened.
           </p>
           <a 
-            href="mailto:cario333ccc@gmail.com"
+            href="mailto:brandon@4thdmc.com"
             style={{
               display: "inline-block",
               padding: "10px 20px",
@@ -456,7 +456,7 @@ export default function App() {
               letterSpacing: 1,
             }}
           >
-            cario333ccc@gmail.com
+            brandon@4thdmc.com
           </a>
         </div>
       </div>
