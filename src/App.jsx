@@ -471,7 +471,7 @@ export default function App() {
         letterSpacing: 2,
         textTransform: "uppercase",
       }}>
-        <span style={{ color: `${GOLD}50` }}>4THDMC | EVOLVE</span>
+        <span style={{ color: `${GOLD}50` }}>4THDMC | EVOLVE LLC</span>
         <span style={{ margin: "0 8px" }}>•</span>
         Brandon Russell
         <span style={{ margin: "0 8px" }}>•</span>
