@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 
-
 const NAVY = "#1B3A6B";
 const NAVY_DEEP = "#0d1f3c";
 const NAVY_DARKER = "#08111e";
@@ -17,6 +16,7 @@ const TOOLS = [
     cta: "Take the Audit",
     url: "https://burnout-audit.vercel.app/",
     status: "live",
+    free: true,
   },
   {
     id: "lesson",
@@ -114,7 +114,7 @@ function App() {
               background: "#5ecf8a",
               boxShadow: "0 0 8px #5ecf8a",
             }} />
-            Active Subscriber
+            Tools Active for Subscribers
           </span>
           <a href="mailto:brandon@4thdmc.com" style={{
             color: "rgba(255,255,255,0.5)",
@@ -127,6 +127,36 @@ function App() {
           </a>
         </div>
       </nav>
+
+      {/* SUBSCRIBER INFO BANNER */}
+      <div style={{
+        position: "relative",
+        zIndex: 10,
+        background: "rgba(201,168,76,0.08)",
+        borderBottom: "1px solid rgba(201,168,76,0.2)",
+        padding: "14px 40px",
+        textAlign: "center",
+        fontSize: 14,
+        color: "rgba(255,255,255,0.75)",
+        lineHeight: 1.6,
+      }}>
+        <strong style={{ color: GOLD }}>Just subscribed?</strong> Check your inbox for the access password to each tool. Don't see it? Check your spam folder — some email providers filter automated messages.{" "}
+        <span style={{ color: "rgba(255,255,255,0.45)" }}>
+          Not subscribed yet?{" "}
+          <a
+            href="https://brrteachingsubscribe.lovable.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: GOLD,
+              textDecoration: "underline",
+              fontWeight: 600,
+            }}
+          >
+            Get access here.
+          </a>
+        </span>
+      </div>
 
       {/* HERO */}
       <section style={{
@@ -247,9 +277,11 @@ function App() {
               }}>
                 <span style={{ fontSize: 32 }}>{tool.icon}</span>
                 <span style={{
-                  background: "rgba(42,157,92,0.15)",
-                  border: "1px solid rgba(42,157,92,0.4)",
-                  color: "#5ecf8a",
+                  background: tool.free
+                    ? "rgba(201,168,76,0.15)"
+                    : "rgba(42,157,92,0.15)",
+                  border: `1px solid ${tool.free ? "rgba(201,168,76,0.4)" : "rgba(42,157,92,0.4)"}`,
+                  color: tool.free ? GOLD : "#5ecf8a",
                   fontSize: 9,
                   fontWeight: 700,
                   letterSpacing: 2,
@@ -264,9 +296,9 @@ function App() {
                     width: 5,
                     height: 5,
                     borderRadius: "50%",
-                    background: "#5ecf8a",
+                    background: tool.free ? GOLD : "#5ecf8a",
                   }} />
-                  Live
+                  {tool.free ? "Free" : "Live"}
                 </span>
               </div>
 
@@ -404,7 +436,7 @@ function App() {
             color: "rgba(255,255,255,0.25)",
             letterSpacing: 1,
           }}>
-            © 2025 All Rights Reserved · Brandon Russell · The Multiplier · Chattanooga, TN
+            © 2026 4THDMC | EVOLVE LLC. All Rights Reserved. · Brandon Russell · The Multiplier · Chattanooga, TN
           </div>
           <div style={{
             fontSize: 10,
@@ -421,6 +453,16 @@ function App() {
             onMouseEnter={e => e.target.style.color = GOLD}
             onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.4)"}>
               brrteaching.com
+            </a>
+            <span style={{ margin: "0 12px", color: "rgba(255,255,255,0.15)" }}>·</span>
+            <a href="https://4thdmc.com" target="_blank" rel="noopener noreferrer" style={{
+              color: "rgba(255,255,255,0.4)",
+              textDecoration: "none",
+              transition: "color 0.2s",
+            }}
+            onMouseEnter={e => e.target.style.color = GOLD}
+            onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.4)"}>
+              4thdmc.com
             </a>
             <span style={{ margin: "0 12px", color: "rgba(255,255,255,0.15)" }}>·</span>
             <a href="mailto:brandon@4thdmc.com" style={{
